@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Software Advice A/B Test</title>
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="css/custom.css">
+        
+        <script src="js/vendor/modernizr.js"></script>
+    </head>
+    <body>
+        <!--Start Top Bar-->
+        <div id="header">
+            <div class="row header-row">
+                <div class="small-6 large-3 columns"><a href="/"><img src="img/sa_logo_tm-reverse-2x-sm.png" alt=""/></a></div>
+                <div class="small-6 large-6 columns"></div>
+                <div class="small-12 large-3 columns"></div>
+            </div>
+        </div>
+        <!--End Top Bar/Start Slider-->
+        <div class="full-section">
+            <div id="header-slider" class="row">
+                <div class="large-12">
+                    <ul class="welcome-slider" data-orbit data-options="pause_on_hover:true;resume_on_mouseout:true;slide_number:false;navigation_arrows:false;swipe:true;">
+                        <li data-orbit-slide="headline-1">
+                            <div>
+                            <h2>Welcome</h2>
+                            <h3>To the Front End Engineer Homework Page of Jim Miller</h3>
+                            </div>
+                        </li>
+                        <li data-orbit-slide="headline-2">
+                            <div>
+                            <h2>Thank you!</h2>
+                            <h3>For the entertaining project</h3>
+                            </div>
+                        </li>
+                        <li data-orbit-slide="headline-3">
+                            <div>
+                            <h2>I hope you enjoy it</h2>
+                            <h3>As much as I did</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--End Slider/Start Info Section-->
+        <div id="s1" class="row">
+            <div class="small-12 large-4 columns">
+                <h4>Libraries Used:</h4>
+                <hr />
+                <div class="zurb">
+                	<img src="img/zurb-logo-sm.png" /> <span>Foundation</span>
+                </div>
+                <div class="jquery">
+                	<img src="img/logo-jquery.png" />
+                </div>
+            </div>
+            <div class="small-12 large-4 columns">
+                <h4>Languages Used:</h4>
+                <hr />
+                <img src="img/langs.png" alt=""/>
+            </div>
+            <div class="small-12 large-4 columns">
+                <h4>Time Spent:</h4>
+                <hr />
+                <img class="clock" src="img/clock_e0.gif" alt="" align="left"/>
+                Approximately 14 hrs from planning to modding to cleanup and notation
+            </div>
+        </div>
+        <!--End Info Section/Start Additions and CTA-->
+        <div class="full-section">
+            <div class="row">
+                <div class="small-12 large-8 columns">
+                    <h4>Additions:</h4>
+                    <ul>
+                    	<li>Honeypot added to form for spam prevention</li>
+                        <li>Unique ID created for user</li>
+                        <li>ID and Group added to JSON object</li>
+                        <li>Thank you/success message added</li>
+                    </ul>
+                </div>
+                <div id="cta" class="small-12 large-4 columns">
+                    <a href="#" data-reveal-id="mod" class="button orange">Click Me</a>
+                </div>
+            </div>  
+        </div>
+        <!--End Additions and CTA/Start Notes-->
+        <div class="row">
+        	<div class="small-9 columns">
+            	<h4>Notes:</h4>
+            	<blockquote>The uniqueID could be further utilized by saving all form data to a JSON file via PHP and then checked against to see if the user has already visited/submitted.<cite>Random ramblings by Jim</cite></blockquote>
+            </div>
+            <div class="small-3 columns">
+            	<ul class="vcard">
+                  <li class="fn">Jim Miller</li>
+                  <li class="street-address">541-870-8532</li>
+                  <li class="email"><a href="mailto:james.m@live.com">james.m@live.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--End Notes and CTA/Start Modal-->
+        <div id="mod" class="reveal-modal" data-reveal aria-hidden="true" role="dialog">
+        	<div class="row">
+                <div class="small-12 large-6 columns">
+                    <div class="ty">
+                    	<h4>Thank you for your participation!</h4>
+                    </div>
+                    <form id="modForm" data-abide="ajax" class="form">
+                    	<input type="hidden" name="userID" class="userID" />
+                        <input type="hidden" name="userGroup" class="userGroup" />
+                        <input type="text" placeholder="*Name" class="name" name="name" required pattern="[a-zA-Z]+" />
+                        <small class="error">Please include your name</small>
+                        <input type="text" placeholder="*Last Name" class="lname" name="lname" value="" />
+                        <input type="email" placeholder="*Email" class="email" name="email" required />
+                        <small class="error">Please include a valid email address</small>
+                        <input type="text" placeholder="Phone" class="phone" name="phone" />
+                        <input type="text" placeholder="Address" class="address" name="address" />
+                        <input type="text" placeholder="City" class="city" name="city" />
+                        <div class="row">
+                        	<div class="small-6 columns">
+                                <select name="state">
+                                    <option value="State">State</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                            	</select>
+                            </div>
+                            <div class="small-6 columns">
+                                <input type="text" placeholder="Zip" class="zip" name="zip" />
+                    		</div>
+                    	</div>
+                    </form>
+                </div>
+                <div class="small-12 large-6 columns">
+                    <div class="modimg"> 
+                    	<img src="" />
+                    </div>
+                    <button type="button" class="button radius sub">Submit</button>
+                </div>
+            </div>
+            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
+        <!--End Modal-->
+		<script src="js/vendor/jquery.js"></script>
+        <script src="js/foundation.min.js"></script>
+        <script src="js/foundation/foundation.abide.js"></script>
+        <script>
+        	$(document).foundation();
+        </script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>
